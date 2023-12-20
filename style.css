@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    overflow: wrap;
+    max-width: 1400px;
+}
+.header{
+    width: 100%;
+    height: auto;
+    /* background-image: url(images/headphone1.jpg); */
+    background-color: #F6BC00;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.header-text{
+    padding: 10rem 5rem;
+    line-height: 1.5;
+    font-size: 1.7em;
+}
+.header-text h6{
+    font-family: 'Bitter', serif;
+}
+.header-text h2{
+    font-family: 'Heebo', sans-serif;
+}
+.header button{
+    border-radius: 25px;
+    padding: 0.5rem 0.8rem;
+    border-style: none;
+    font-family: 'Heebo', sans-serif;
+}
+.header-img{
+    padding: 2rem 2rem 2rem 6rem;
+}
+.header-img img{
+    width: 18rem;
+    transform: rotate(30deg);
+}
+.body-text{
+    text-align: justify;
+    padding: 4rem 5rem;
+}
+.body-text h6{
+    font-size: 1.7em;
+    font-family: 'Bitter', serif;
+    margin-bottom: 0.5rem;
+}
+.body-text p{
+    font-size: 1.2rem;
+    font-family: 'Heebo', sans-serif;
+}
+.thirdSection{
+    background-color: #F6BC00;
+    width: 100%;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    text-align: center;
+    padding: 1.5rem;
+}
+.card-section{
+    display: flex;
+    padding: 2rem 5rem;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.class-section-text{
+    padding: 1.5rem 1.5rem 1.5rem 5rem;
+    font-family: 'Heebo', sans-serif;
+}
+.card{
+    width: 18rem;   
+    margin-bottom: 0;
+    background-color: #ecb40d;
+    border-radius: 5px;
+}
+.card h4{
+    padding: 0.8rem;
+    font-family: 'Heebo', sans-serif;
+}
+.card p{
+    padding: 0.8rem;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.new-headphones{
+    padding: 2rem 5rem 2rem 5rem;
+}
+.newSubSection{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.newSubSection img{
+    width: 15rem;
+    height: 14rem;
+    
+}
+.reasons{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding: 2rem 5rem;
+    font-family: 'Bitter', serif;
+}
+.reason-item p{
+    margin-top: 0.5rem;
+}
+.reason-item h2{
+    font-family: 'Heebo', sans-serif;
+}
+.footer{
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+}
+.footer2{
+    padding: 2rem 5rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 20rem;
+    font-family: 'Bitter', serif;
+}
+.footer2 img{
+    width: 7rem;
+}
+.footer2 p{
+    margin-top: 1rem;
+}
+.footer2 .contact{
+    margin-top: 1rem;
+}
+.footer2 .contact i{
+    color: #F6BC00;
+    width: 1.5rem;
+    height: auto;
+}
+/*  Site Responsiveness*/
+@media screen and (max-width: 480px) {
+    *{
+        margin: 0;
+    }
+   .header{
+        display: flex;
+   }
+   .header-text h2{
+        font-weight: 200;
+        font-size: 2rem;
+   }
+    .header-img{
+        display: none;
+    }
+    .header-img img{
+        display: none;
+    }
+    .header-text{
+        width: 100%;
+        /* padding: 5rem 3rem; */
+        justify-content: center;
+        align-items: center;
+    }
+    .thirdSection{
+        font-size: 0.8rem;
+    }
+    .card-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .newSubSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .new-headphones .second img{
+        display: none;
+    }
+    .thirdSection h1{
+        font-size: 1rem;
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer h1{
+        font-size: 1.2rem;
+    }
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background-color: #F6BC00;
+        color: white;
+    }
+    .footer2 img{
+        display: none;
+    }
+    .footer2 .contact i{
+        color: white;
+        width: 1.5rem;
+        height: auto;
+    }
+}
+@media screen and (max-width: 576px) {
+    .header{
+        display: flex;
+   }
+   .header-text h2{
+        font-weight: 200;
+        font-size: 2rem;
+   }
+    .header-img{
+        display: none;
+    }
+    .header-img img{
+        display: none;
+    }
+    .header-text{
+        width: 100%;
+        padding: 5rem 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .thirdSection h1{
+        font-size: 1.2rem;
+    }
+    .card-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 21rem;
+    }
+    .newSubSection{
+        display: flex;
+        flex-direction: column;
+    }
+    .new-headphones .second img{
+        display: none;
+    }
+    .thirdSection h1{
+        font-size: 1.2rem;
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer h1{
+        font-size: 2rem;
+    }
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        background-color: #F6BC00;
+        color: white;
+    }
+    .footer2 img{
+        display: none;
+    }
+    .footer2 .contact i{
+        color: white;
+        width: 1.5rem;
+        height: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-text{
+        font-size: 1.5em;
+    }
+    .header-img img{
+        width: 15rem;
+        margin-top: 4rem;
+        margin-right: 4rem;
+    }
+    .newSubSection{
+        gap: 1rem;
+    }
+    .new-headphones .newSubSection img{
+        width: 10rem;
+        height: 10rem;
+    }
+    .new-headphones .second img{
+        display: none;
+    }
+    .thirdSection h1{
+        font-size: 1.2rem;
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer h1{
+        font-size: 2rem;
+    }
+    .footer2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1.2rem;
+        background-color: #F6BC00;
+        color: white;
+    }
+    .footer2 img{
+        display: none;
+    }
+    .footer2 .contact i{
+        color: white;
+        width: 1.5rem;
+        height: auto;
+    }
+}
